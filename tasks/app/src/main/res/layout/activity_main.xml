@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Colocviu1_1MainActivity">
+
+    <Button
+        android:id="@+id/northButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="North"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/northButton">
+        <Button
+            android:id="@+id/eastButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="East"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="left"
+            android:layout_alignParentLeft="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/westButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="West"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/southButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="South"
+        android:layout_below="@+id/relativeId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/clikedButtonsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/southButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/otherActivityButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAVIGATE TO SECONDARY ACTIVITY"
+        android:layout_below="@+id/clikedButtonsText"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</RelativeLayout>
