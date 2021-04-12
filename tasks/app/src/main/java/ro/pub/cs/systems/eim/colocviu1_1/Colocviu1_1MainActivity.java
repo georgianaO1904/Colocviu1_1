@@ -23,6 +23,7 @@ public class Colocviu1_1MainActivity extends AppCompatActivity {
             R.id.southButton,
             R.id.eastButton,
             R.id.westButton,
+            R.id.otherActivityButton,
     };
     //b1
     @Override
